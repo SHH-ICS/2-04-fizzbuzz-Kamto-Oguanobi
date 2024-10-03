@@ -7,7 +7,14 @@
 # End at 32
 
 result = ""
-for myNumber in range(32):
-  result = str(result) + str(myNumber) + "\n"
+for myNumber in range(1, 33):
+    if myNumber % 15 == 0:
+        result += "FizzBuzz\n"
+    elif myNumber % 3 == 0:
+        result += "Fizz\n"
+    elif myNumber % 5 == 0:
+        result += "Buzz\n"
+    else:
+        result += str(myNumber) + "\n"
 
 print(result)
